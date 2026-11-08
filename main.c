@@ -19,4 +19,8 @@ while (proposition != nombre_secret) {
 	printf("Entre un nombre : ");
 scanf("%d", &proposition);
 essais;
-
+if (proposition < 1 || proposition > 100) {
+    printf("Le nombre doit etre entre 1 et 100.\n");
+}elif (proposition < nombre_secret) 
+    printf("C'est plus grand !\n")
+}
