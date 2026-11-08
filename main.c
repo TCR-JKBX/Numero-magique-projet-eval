@@ -4,32 +4,53 @@
 
 int main() {
 
+    // Declaration des variables
     int random_number;
-    int proposition;
+    int proposition = 0;
     int essais = 0;
 
+    // L'ordinateur choisit un nombre aleatoire entre 1 et 100
     srand(time(NULL));
-int random_number = rand() % 100 + 1;
+    random_number = rand() % 100 + 1;
 
-printf("Bienvenue dans le jeu du numero magique !\n")
-printf("J'ai choisi un nombre entre 1 et 100.\n")
-printf("Trouve le ! !\n")
+    
+    printf("Bienvenue dans le jeu du numero magique !\n");
+    printf("J'ai choisi un nombre entre 1 et 100.\n");
+    printf("Trouve le ! !\n\n");
 
-while (proposition != nombre_secret) {
-	printf("Entre un nombre : ");
-scanf("%d", &proposition);
-essais;
-if (proposition < 1 || proposition > 100) {
-    printf("Le nombre doit etre entre 1 et 100.\n");
-}else if (proposition < nombre_secret) 
-    printf("C'est plus grand !\n")
-}else if (proposition > nombre_secret) {
-    printf("C'est plus petit !\n");
+    
+    while (proposition != random_number) {
+
+        
+        printf("Entre un nombre : ");
+        scanf("%d", &proposition);
+
+        essais;
+
+
+        if (proposition < 1 || proposition > 100) {
+            printf("Le nombre doit etre entre 1 et 100.\n");
+        }
+
+  
+        else if (proposition < random_number) {
+            printf("C'est plus grand !\n");
+        }
+
+      
+        else if (proposition > random_number) {
+            printf("C'est plus petit !\n");
+        }
+
+     
+        else {
+            printf("Bravo ! Tu as trouve le nombre magique !\n");
+            printf("Tu as trouve en %d essais.\n", essais);
+        }
+
+        printf("\n");
+    }
+
+    return 0;
 }
-
-else {
-    printf("Bravo ! Tu as trouve le nombre magique !\n")
-    printf("Tu as trouve en %d essais.", essais);
-    printf("\n");
-    return (0)
 
