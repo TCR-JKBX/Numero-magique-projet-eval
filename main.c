@@ -21,6 +21,15 @@ scanf("%d", &proposition);
 essais;
 if (proposition < 1 || proposition > 100) {
     printf("Le nombre doit etre entre 1 et 100.\n");
-}elif (proposition < nombre_secret) 
+}else if (proposition < nombre_secret) 
     printf("C'est plus grand !\n")
+}else if (proposition > nombre_secret) {
+    printf("C'est plus petit !\n");
 }
+
+else {
+    printf("Bravo ! Tu as trouve le nombre magique !\n")
+    printf("Tu as trouve en %d essais.", essais);
+    printf("\n");
+    return (0)
+
