@@ -15,4 +15,8 @@ printf("Bienvenue dans le jeu du numero magique !\n")
 printf("J'ai choisi un nombre entre 1 et 100.\n")
 printf("Trouve le ! !\n")
 
+while (proposition != nombre_secret) {
+	printf("Entre un nombre : ");
+scanf("%d", &proposition);
+essais;
 
