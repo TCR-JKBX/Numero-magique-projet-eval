@@ -1,5 +1,5 @@
 # Numero-magique-projet-eval
-
-pour compiler c'est simple 
+Compilation du projet :
 gcc main.c -o numero_magique
 ./numero_magique
+

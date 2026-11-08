@@ -4,28 +4,28 @@
 
 int main() {
 
-  // déclar. variables
+  // Déclar. variables :
     int random_number;
     int proposition = 0;
     int essais = 0;
 
-  // randomiser de 1 à 100 (pris dans l'énoncé du projet
+  // Le PC choisit par ce randomizer un nbr de 1 à 100 (pris dans l'énoncé du projet):
     srand(time(NULL));
     random_number = rand() % 100 + 1;
 
-  // la chose qui fait bip bip nous parle et elle saute des lignes   
+  // La chose qui fait bip bip nous parle et elle saute des lignes :
     printf("Bienvenue dans le jeu du numero magique !\n");
     printf("J'ai choisi un nombre entre 1 et 100.\n");
-    printf("Trouve le ! !\n\n");
+    printf("Trouve le !\n\n");
 
-  // while donc début boucle
+  // Début de la boucle par while. C'est expliqué dans le cours (lien dans AIDE-EXTERIEURE.md).
     while (proposition != random_number) {
 
         
         printf("Entre un nombre : ");
         scanf("%d", &proposition);
 
-        essais;
+        essais++;
 
 
         if (proposition < 1 || proposition > 100) {
