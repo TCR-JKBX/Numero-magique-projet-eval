@@ -4,12 +4,12 @@
 
 int main() {
 
-    // Declaration des variables
+
     int random_number;
     int proposition = 0;
     int essais = 0;
 
-    // L'ordinateur choisit un nombre aleatoire entre 1 et 100
+
     srand(time(NULL));
     random_number = rand() % 100 + 1;
 
