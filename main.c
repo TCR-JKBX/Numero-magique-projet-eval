@@ -10,4 +10,9 @@ int main() {
 
     srand(time(NULL));
 int random_number = rand() % 100 + 1;
-   
+
+printf("Bienvenue dans le jeu du numero magique !\n")
+printf("J'ai choisi un nombre entre 1 et 100.\n")
+printf("Trouve le ! !\n")
+
+
